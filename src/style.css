@@ -1,45 +1,55 @@
+/* theme of the website */
+:root {
+    --primary-color:#2F3643;
+    --secondary-color:#F1DCB8;
+    --menu-shade:#61708e;
+    --specific-color:orange;
+}
+
 body {
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
+    font-family: Consolas, 'Courier New', monospace;
 }
-header {
-    background-color: #0066CC;
-    color: white;
-    font-size: 19px;
+header .social-media-handles {
+    background-color: var(--secondary-color);
+    padding-left: 20px;
+}
+header .menubar {
+    background-color: var(--primary-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding-left: 20px;
 }
-.logo {
-    font-size: 30px;
-}
-
-nav ul {
-    list-style-type: none;
+header .logo {
+    background-color:var(--menu-shade);
+    border-radius: 40px;
     display: flex;
+    justify-content: center;
     align-items: center;
-    margin: 0;
-    padding: 0;
+    padding: 10px;
+    gap: 5px;
+    text-wrap: wrap;
+    width: 370px;
+    font-size: 20px;
 }
-nav ul li {
-    margin: 0 5px;
+header .DTU-LOGO {
+    height: 90px;
 }
-nav ul li a {
+header .menu ul {
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+}
+header .menu ul li a {
     color: white;
     text-decoration: none;
-    padding: 16px;
-    
+    background-color: var(--menu-shade);
+    padding: 10px;
+    border-radius: 20px;
 }
-nav ul li a:hover {
-    background-color: blue;
-    text-decoration: underline;
-}
-.login {
-    background-color: white;
-    border-radius: 100px;
-    height: 40px;
-    width: 40px;
+header .menu ul li .Contact-us {
+    background-color: var(--specific-color);
+    color: black;
 }

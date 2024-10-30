@@ -56,7 +56,16 @@ header .menu ul li a {
     background-color: var(--menu-shade);
     padding: 10px;
     border-radius: 20px;
+    position: relative;
+    transition: transform 0.5s ease;
+    display: inline-block;
 }
+
+header .menu ul li a:hover {
+    transform: scale(120%);
+    text-decoration: underline;
+}
+
 header .menu ul li .Contact-us {
     background-color: var(--specific-color);
     color: black;
@@ -82,6 +91,7 @@ header .menu .home {
     padding-top: 20px;
     padding-left: 100px;
     padding-right: 100px;
+    padding-bottom: 20px;
     font-size: 40px;
     background-color: var(--primary-color);
     color: white;
@@ -99,4 +109,10 @@ header .menu .home {
 }
 .content .insights .insights-block .block h1 {
     border-bottom: 1px solid black;
+}
+.content .notice {
+    background-color: var(--secondary-color);
+    text-align: center;
+    text-decoration: underline;
+    font-size: 2rem;
 }

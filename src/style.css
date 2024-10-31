@@ -112,7 +112,22 @@ header .menu .home {
 }
 .content .notice {
     background-color: var(--secondary-color);
+    
+    
+}
+.content .notice h1 {
     text-align: center;
     text-decoration: underline;
     font-size: 2rem;
+}
+.content .notice .notice-area {
+    display: flex;
+    padding: 50px;
+    /* justify-content: space-between; */
+    gap: 60px;
+}
+.content .notice .notice-area .dtu-image {
+    padding: 20px;
+    background-color: var(--specific-color);
+    border-radius: 20px;
 }

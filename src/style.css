@@ -131,3 +131,33 @@ header .menu .home {
     background-color: var(--specific-color);
     border-radius: 20px;
 }
+.content .notice .list-area .list {
+    list-style-type: none;
+    padding-left: 0px;
+}
+.content .notice .list-area .list li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 30px;
+    font-size: 15px;
+    border-bottom: 1px solid black;
+}
+.content .notice .list-area .list li::before {
+    content: '➤'; /* Unicode arrow */
+    position: absolute;
+    left: 0;
+    color: white; /* Arrow color */
+    background-color: orange; /* Circle color */
+    border-radius: 50%; /* Make it circular */
+    width: 20px; /* Circle size */
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px; /* Adjust arrow size */
+}
+.foot {
+    background-color: var(--primary-color);
+    color: gray;
+    padding: 50px;
+}

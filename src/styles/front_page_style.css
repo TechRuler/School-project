@@ -1,0 +1,175 @@
+/* theme of the website */
+:root {
+    --primary-color:#2F3643;
+    --secondary-color:#F1DCB8;
+    --menu-shade:#61708e;
+    --specific-color:orange;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Consolas, 'Courier New', monospace;
+    overflow-x: hidden;
+}
+header .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    background-color: var(--secondary-color);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+header .menubar {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+header .logo {
+    background-color:var(--menu-shade);
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 5px;
+    text-wrap: wrap;
+    width: 370px;
+    font-size: 20px;
+}
+header .DTU-LOGO {
+    height: 90px;
+}
+header .menu ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    gap: 10px;
+}
+header .menu ul li a {
+    color: white;
+    text-decoration: none;
+    background-color: var(--menu-shade);
+    padding: 10px;
+    border-radius: 20px;
+    position: relative;
+    transition: transform 0.5s ease;
+    display: inline-block;
+}
+
+header .menu ul li a:hover {
+    transform: scale(120%);
+    text-decoration: underline;
+}
+
+header .menu ul li .Contact-us {
+    background-color: var(--specific-color);
+    color: black;
+}
+header .menu .home {
+    margin: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 30px;
+    width: 20px;
+    font-weight: bold;
+    border-radius: 80px;
+}
+.content {
+    background-color: var(--primary-color);
+}
+.content .DTU-IMAGE img {
+    height: 80vh;
+    width: 100vw;
+    
+}
+.content .insights {
+    padding-top: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 20px;
+    font-size: 40px;
+    background-color: var(--primary-color);
+    color: white;
+}
+.content .insights .insights-block {
+    display: flex;
+    
+}
+.content .insights .insights-block .block {
+    background-color: var(--secondary-color);
+    
+    font-size: 15px;
+    border: 1px solid black;
+    padding: 10px;
+    color: black;
+}
+.content .insights .insights-block .block a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    border-bottom: 1px solid black;
+}
+.content .insights .insights-block .block a h1 {
+    
+    color: black;
+}
+.content .insights .insights-block .block a h1:hover {
+    /* text-decoration: underline; */
+    color: var(--specific-color);
+}
+.content .notice {
+    background-color: var(--secondary-color);
+    
+    
+}
+.content .notice h1 {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 2rem;
+}
+.content .notice .notice-area {
+    display: flex;
+    padding: 50px;
+    /* justify-content: space-between; */
+    gap: 60px;
+}
+.content .notice .notice-area .dtu-image {
+    padding: 20px;
+    background-color: var(--specific-color);
+    border-radius: 20px;
+}
+.content .notice .list-area .list {
+    list-style-type: none;
+    padding-left: 0px;
+}
+.content .notice .list-area .list li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 30px;
+    font-size: 15px;
+    border-bottom: 1px solid black;
+}
+.content .notice .list-area .list li::before {
+    content: '➤'; /* Unicode arrow */
+    position: absolute;
+    left: 0;
+    color: white; /* Arrow color */
+    background-color: orange; /* Circle color */
+    border-radius: 50%; /* Make it circular */
+    width: 20px; /* Circle size */
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px; /* Adjust arrow size */
+}
+.foot {
+    background-color: var(--primary-color);
+    color: gray;
+    padding: 50px;
+}

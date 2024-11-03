@@ -1,0 +1,120 @@
+/* Theme of the website */
+:root {
+    --primary-color: #2F3643;
+    --secondary-color: #F1DCB8;
+    --menu-shade: #61708e;
+    --specific-color: orange;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Consolas, 'Courier New', monospace;
+    overflow-x: hidden;
+}
+
+header .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    background-color: var(--secondary-color);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+header .menubar {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+header .logo {
+    background-color:var(--menu-shade);
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 5px;
+    text-wrap: wrap;
+    width: 370px;
+    font-size: 20px;
+}
+header .DTU-LOGO {
+    height: 90px;
+}
+header .menu ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    gap: 10px;
+}
+header .menu ul li a {
+    color: white;
+    text-decoration: none;
+    background-color: var(--menu-shade);
+    padding: 10px;
+    border-radius: 20px;
+    position: relative;
+    transition: transform 0.5s ease;
+    display: inline-block;
+}
+
+header .menu ul li a:hover {
+    transform: scale(120%);
+    text-decoration: underline;
+}
+
+header .menu ul li .Contact-us {
+    background-color: var(--specific-color);
+    color: black;
+}
+header .menu .home {
+    margin: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 30px;
+    width: 20px;
+    font-weight: bold;
+    border-radius: 80px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: var(--specific-color);
+}
+
+.departments, .courses, .faculty {
+    padding: 1.5rem;
+    background-color: var(--secondary-color);
+}
+
+h2 {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+}
+
+.department-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.department {
+    background-color: var(--menu-shade);
+    border: 1px solid var(--primary-color);
+    padding: 1rem;
+    border-radius: 8px;
+    width: 30%;
+    color: var(--secondary-color);
+}
+
+
+.foot {
+    background-color: var(--primary-color);
+    color: gray;
+    padding: 50px;
+}

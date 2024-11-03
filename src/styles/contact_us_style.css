@@ -11,6 +11,9 @@ body {
     padding: 0;
     font-family: Consolas, 'Courier New', monospace;
     overflow-x: hidden;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--secondary-color);
 }
 header .info {
     display: flex;
@@ -79,82 +82,48 @@ header .menu .home {
     font-weight: bold;
     border-radius: 80px;
 }
-.content {
-    background-color: var(--primary-color);
-}
-.content .DTU-IMAGE img {
-    height: 80vh;
-    width: 100vw;
-    
-}
-.content .insights {
-    padding-top: 20px;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-bottom: 20px;
-    font-size: 40px;
+.contact-container {
+    margin: 50px;
+    padding: 50px;
     background-color: var(--primary-color);
     color: white;
+    border-radius: 50px;
 }
-.content .insights .insights-block {
+.contact-container .contact-form {
     display: flex;
-    
+    flex-direction: column;
+    gap: 10px;
+
 }
-.content .insights .insights-block .block {
-    background-color: var(--secondary-color);
-    font-size: 15px;
-    border: 1px solid black;
-    padding: 10px;
-    color: black;
+.contact-container .contact-form input,
+.contact-container .contact-form textarea {
+    padding: 0.75rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
 }
-.content .insights .insights-block .block h1 {
-    border-bottom: 1px solid black;
+.contact-container .contact-form textarea {
+    height: 200px;
 }
-.content .notice {
-    background-color: var(--secondary-color);
-    
-    
+.contact-container .contact-form input:focus,
+.contact-container .contact-form textarea:focus {
+    border-color: var(--button-color);
+    outline: none;
 }
-.content .notice h1 {
-    text-align: center;
-    text-decoration: underline;
-    font-size: 2rem;
+.contact-container .contact-form button {
+    margin-top: 1.5rem;
+    padding: 0.75rem;
+    background-color: #4a90e2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
-.content .notice .notice-area {
-    display: flex;
-    padding: 50px;
-    /* justify-content: space-between; */
-    gap: 60px;
-}
-.content .notice .notice-area .dtu-image {
-    padding: 20px;
-    background-color: var(--specific-color);
-    border-radius: 20px;
-}
-.content .notice .list-area .list {
-    list-style-type: none;
-    padding-left: 0px;
-}
-.content .notice .list-area .list li {
-    position: relative;
-    padding-left: 30px;
-    margin-bottom: 30px;
-    font-size: 15px;
-    border-bottom: 1px solid black;
-}
-.content .notice .list-area .list li::before {
-    content: '➤'; /* Unicode arrow */
-    position: absolute;
-    left: 0;
-    color: white; /* Arrow color */
-    background-color: orange; /* Circle color */
-    border-radius: 50%; /* Make it circular */
-    width: 20px; /* Circle size */
-    height: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 12px; /* Adjust arrow size */
+.contact-container .contact-form button:hover {
+    background-color: #357ab7;
 }
 .foot {
     background-color: var(--primary-color);

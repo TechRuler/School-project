@@ -1,0 +1,237 @@
+/* Theme of the website */
+:root {
+    --primary-color: #2F3643;
+    --secondary-color: #F1DCB8;
+    --menu-shade: #61708e;
+    --accent-color: orange;
+    --text-color: #333;
+    --light-bg: #f9f9f9;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Consolas, 'Courier New', monospace;
+    overflow-x: hidden;
+}
+header .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    background-color: var(--secondary-color);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+header .menubar {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+header .logo {
+    background-color:var(--menu-shade);
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 5px;
+    text-wrap: wrap;
+    width: 370px;
+    font-size: 20px;
+}
+header .DTU-LOGO {
+    height: 90px;
+}
+header .menu ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    gap: 10px;
+}
+header .menu ul li a {
+    color: white;
+    text-decoration: none;
+    background-color: var(--menu-shade);
+    padding: 10px;
+    border-radius: 20px;
+    position: relative;
+    transition: transform 0.5s ease;
+    display: inline-block;
+}
+
+header .menu ul li a:hover {
+    transform: scale(120%);
+    text-decoration: underline;
+}
+
+header .menu ul li .Contact-us {
+    background-color: var(--accent-color);
+    color: black;
+}
+header .menu .home {
+    margin: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 30px;
+    width: 20px;
+    font-weight: bold;
+    border-radius: 80px;
+}
+h1, h2, h3 {
+    color: var(--primary-color);
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: var(--accent-color);
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin: 1.5rem 0;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: center;
+    color: var(--text-color);
+}
+
+
+.admission-intro {
+    background-color: var(--menu-shade);
+    color: var(--light-bg);
+    padding: 2rem;
+    border-radius: 12px;
+    margin: 2rem auto;
+    width: 80%;
+}
+
+
+.admission-steps {
+    padding: 2rem;
+}
+
+.steps-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 1.5rem;
+}
+
+.step {
+    background-color: var(--light-bg);
+    color: var(--primary-color);
+    cursor: pointer;
+    padding: 1.5rem;
+    border-radius: 8px;
+    width: 250px;
+    margin: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.step:hover {
+    transform: scale(1.05);
+}
+
+.step-number {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin: 0 auto 1rem;
+    font-size: 1.5rem;
+}
+
+.step h3 {
+    margin: 0.5rem 0;
+}
+
+.step p {
+    font-size: 0.9rem;
+}
+
+.important-dates {
+    padding: 2rem;
+}
+
+table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+table th, table td {
+    padding: 1rem;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+table td {
+    background-color: var(--light-bg);
+}
+
+.contact-us {
+    padding: 2rem;
+    background-color: var(--menu-shade);
+    color: var(--light-bg);
+    margin: 2rem auto;
+    width: 80%;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.cta-btn {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 1rem;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+.foot {
+    background-color: var(--primary-color);
+    color: gray;
+    padding: 50px;
+}
+
+
+@media (max-width: 768px) {
+    .steps-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    table {
+        width: 90%;
+    }
+}

@@ -110,6 +110,10 @@ h2 {
     border-radius: 8px;
     width: 30%;
     color: var(--secondary-color);
+    transition: tranform 0.3s ease;
+}
+.department:hover {
+    transform: scale(1.07);
 }
 
 

@@ -9,7 +9,7 @@
     
 }
 
-/* General Styles */
+
 body {
     margin: 0;
     padding: 0;
@@ -108,7 +108,7 @@ p {
     color: var(--text-color);
 }
 
-/* Courses Intro Section */
+
 .courses-intro {
     background-color: var(--menu-shade);
     color: var(--light-bg);
@@ -118,7 +118,7 @@ p {
     width: 80%;
 }
 
-/* Courses List */
+
 .courses-list {
     padding: 2rem;
 }
@@ -154,7 +154,7 @@ p {
     line-height: 1.4;
 }
 
-/* Contact Us Section */
+
 .contact-us {
     padding: 2rem;
     background-color: var(--menu-shade);
@@ -182,7 +182,7 @@ p {
     color: white;
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
     .course-cards {
         flex-direction: column;

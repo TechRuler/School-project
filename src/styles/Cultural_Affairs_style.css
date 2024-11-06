@@ -9,7 +9,7 @@
     
 }
 
-/* General Styles */
+
 body {
     margin: 0;
     padding: 0;
@@ -109,7 +109,7 @@ header .menu .home {
     font-weight: bold;
     border-radius: 80px;
 }
-/* Introduction Section */
+
 .intro {
     padding: 2rem;
     background-color: var(--menu-shade);
@@ -150,7 +150,7 @@ header .menu .home {
     margin: 0 0 1rem 0;
 }
 
-/* Gallery Section */
+
 .gallery {
     padding: 2rem;
     background-color: var(--menu-shade);
@@ -186,7 +186,7 @@ header .menu .home {
     transform: scale(1.05);
 }
 
-/* Footer */
+
 footer {
     background-color: var(--primary-color);
     color: var(--light-bg);

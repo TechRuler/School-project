@@ -1,0 +1,339 @@
+* {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+body {
+    background-color: #2F3643;
+}
+
+
+#logo {
+
+    font-size: 40px;
+    border-style: none;
+
+    height: 150px;
+    padding-left: 20px;
+    display: inline-block;
+
+}
+
+#all {
+    display: flex;
+
+    width: 1422px;
+}
+
+#dtu {
+    padding-left: 259px;
+    padding-top: 50px;
+    font-size: 40px;
+    color: white;
+
+
+}
+
+#top {
+    margin-top: 25px;
+    color: white;
+    margin-left: 90px;
+    border-style: none;
+    height: 510px;
+    width: 600px;
+    font-size: 25px;
+    position: absolute;
+
+}
+
+
+#header {
+    background-image: url(css-image/output-onlinepngtools.png);
+    background-size: cover;
+    height: 500px;
+}
+
+#head {
+    width: 1280px;
+    position: absolute;
+}
+
+#campus {
+    padding-top: 100px;
+    padding-left: 350px;
+    border-style: none;
+    font-size: 100px;
+    border-style: none;
+    height: 247px;
+    color: white;
+    font-family: "Anton", serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+#testimony {
+
+    margin-bottom: 20px;
+    font-size: 45px;
+    border-style: none;
+    padding-left: 800px;
+    height: 150px;
+    width: 600px;
+    padding-top: 40px;
+    color: white;
+    font-family: "Anton", serif;
+    font-weight: 400;
+    font-style: normal;
+    display: inline-block;
+
+}
+
+
+#first {
+    border-style: solid;
+    margin-left: 800px;
+    position: absolute;
+    top: 180px;
+    width: 450px;
+    height: 150px;
+    border-radius: 10px;
+    border-width: 5px;
+    border-color: aqua;
+
+
+}
+
+#num {
+    text-align: center;
+    font-size: 60px;
+    color: rgb(229, 218, 7);
+
+}
+
+#create {
+    padding-left: 50px;
+    padding-top: 10px;
+}
+
+#second {
+    border-style: solid;
+    margin-left: 800px;
+    position: absolute;
+    top: 400px;
+    width: 450px;
+    border-radius: 10px;
+    height: 150px;
+    border-width: 5px;
+    border-color: aqua;
+}
+
+#make {
+    text-align: center;
+    color: rgb(229, 218, 7);
+    font-size: 60px;
+}
+
+#comp {
+    padding-left: 10px;
+    padding-top: 10px;
+
+}
+
+#third {
+    border-style: solid;
+    margin-left: 800px;
+    position: absolute;
+    top: 625px;
+    width: 450px;
+    border-radius: 10px;
+    height: 150px;
+    border-width: 5px;
+    border-color: aqua;
+
+}
+
+#take {
+    text-align: center;
+    color: rgb(229, 218, 7);
+    font-size: 60px;
+}
+
+#cr {
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+#fourth {
+    border-style: solid;
+    border-width: 5px;
+    margin-left: 800px;
+    position: absolute;
+    top: 850px;
+    width: 450px;
+    border-radius: 10px;
+    height: 150px;
+    border-color: aqua;
+
+}
+
+#up {
+    text-align: center;
+    color: rgb(229, 218, 7);
+    font-size: 60px;
+}
+
+#sup {
+    padding-left: 90px;
+    padding-top: 10px;
+}
+
+#img {
+    margin-top: 201px;
+    margin-left: 10px;
+    border-style: solid;
+    width: 800px;
+    border-width: 10px;
+}
+
+#im2 {
+    margin-left: 15px;
+    border-style: solid;
+    width: 800px;
+    border-width: 10px;
+}
+
+#topre {
+    font-size: 40px;
+    color: white;
+}
+
+#flex {
+    border-style: solid;
+    display: flex;
+
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+/* Main container */
+.content {
+    height: 150vh;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+    width: 10px;
+    /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #f0f0f0;
+    /* Scrollbar track color */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #7bc1e1;
+    /* Scrollbar thumb color */
+    border-radius: 5px;
+}
+
+:root {
+    --primary-color: #2F3643;
+    --secondary-color: #F1DCB8;
+    --menu-shade: #61708e;
+    --specific-color: orange;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Consolas, 'Courier New', monospace;
+    overflow-x: hidden;
+}
+
+header .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    background-color: var(--secondary-color);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+header .menubar {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+header .logo {
+    background-color: var(--menu-shade);
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 5px;
+    text-wrap: wrap;
+    width: 370px;
+    font-size: 20px;
+}
+
+header .DTU-LOGO {
+    height: 90px;
+}
+
+header .menu ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    gap: 10px;
+}
+
+header .menu ul li a {
+    color: white;
+    text-decoration: none;
+    background-color: var(--menu-shade);
+    padding: 10px;
+    border-radius: 20px;
+    position: relative;
+    transition: transform 0.5s ease;
+    display: inline-block;
+}
+
+header .menu ul li a:hover {
+    transform: scale(120%);
+    text-decoration: underline;
+}
+
+header .menu ul li .Contact-us {
+    background-color: var(--specific-color);
+    color: black;
+}
+
+header .menu .home {
+    margin: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 30px;
+    width: 20px;
+    font-weight: bold;
+    border-radius: 80px;
+}
+.foot {
+    background-color: var(--primary-color);
+    color: gray;
+    padding: 50px;
+}

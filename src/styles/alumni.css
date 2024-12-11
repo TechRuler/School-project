@@ -1,0 +1,326 @@
+
+
+
+
+:root {
+    --primary-color: #2F3643;
+    --secondary-color: #F1DCB8;
+    --menu-shade: #61708e;
+    --specific-color: orange;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Consolas, 'Courier New', monospace;
+    overflow-x: hidden;
+}
+
+header .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    background-color: var(--secondary-color);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+header .menubar {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+header .logo {
+    background-color:var(--menu-shade);
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 5px;
+    text-wrap: wrap;
+    width: 370px;
+    font-size: 20px;
+}
+header .DTU-LOGO {
+    height: 90px;
+}
+header .menu ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    gap: 10px;
+}
+header .menu ul li a {
+    color: white;
+    text-decoration: none;
+    background-color: var(--menu-shade);
+    padding: 10px;
+    border-radius: 20px;
+    position: relative;
+    transition: transform 0.5s ease;
+    display: inline-block;
+}
+
+header .menu ul li a:hover {
+    transform: scale(120%);
+    text-decoration: underline;
+}
+
+header .menu ul li .Contact-us {
+    background-color: var(--specific-color);
+    color: black;
+}
+header .menu .home {
+    margin: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 30px;
+    width: 20px;
+    font-weight: bold;
+    border-radius: 80px;
+}
+body {
+    background-color: #2F3643;
+}
+#border {
+    border-style: solid;
+    height:2000px;
+    width:1000px;
+    margin-left:200px;
+    background-color:#f9dca6 ;
+    margin-top :30px;
+    border-radius: 20px;
+    border-width:5px;
+}
+#info{ 
+    border-style:none; 
+    padding-top : 10px;
+    padding-left:10px;
+    font-size:30px;
+}
+#image-container {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+#image-container .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7));
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 15px;
+}
+
+#image-container:hover .overlay {
+    opacity: 1;
+}
+
+.overlay h1 {
+    font-size: 60px;
+    margin: 0;
+    font-weight: bold;
+    
+    margin-left:25px;
+}
+
+.overlay p {
+    font-size: 25px;
+    margin: 10px ;
+    margin-right:80px;
+    font-weight: 300;
+}
+
+.overlay button {
+    background-color: var(--specific-color);
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 20px;
+    margin: 5px;
+    margin-right:40px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.overlay button:hover {
+    background-color: var(--specific-color);
+    transform: scale(1.1);
+}
+/* body {
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: #2F3643;
+    color: white;
+} */
+
+h1, h2, h3 {
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--specific-color);
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #F1DCB8;
+}
+#dis{ 
+    color:black;
+    font-weight: bold;
+    font-size:50px;
+    padding-left:20px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+#image{ 
+    border-style: solid;
+    border-width:5px;
+    height:400px;
+    width:1420px;
+}
+#rajsoin{
+    border-style:none;
+    padding-left:10px;
+    position:absolute;
+    margin-top:60px;
+}
+#details{
+    position: absolute;
+    right :400px;
+    bottom:90px;
+    font-family: "Shadows Into Light", cursive;
+    font-weight: bold;
+    font-style: normal; 
+    font-size:70px;
+    color: black;
+} 
+#rdet{ 
+    position: absolute;
+    top:660px;
+    right:300px;
+    border-style:none ;
+    height:300px;
+    width:400px;
+    padding :8px;
+    color: rgb(148, 108, 108);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:20px
+}
+main{
+    font-size: 23px;
+    color:red;  
+    font-family: "Patrick Hand", cursive;
+  font-weight: 400;
+  font-style: normal;
+  display: inline-block;
+}
+#vinodham{
+    position: absolute;
+    top:1090px;
+    left:210px;
+    margin-left:10px;
+} 
+#vdetails{
+    position: absolute;
+    top:1050px;
+    right:350px;
+    font-family: "Shadows Into Light", cursive;
+    font-weight: bold;
+    font-style: normal; 
+    font-size:70px;
+    color: black;
+}
+#vdet{
+    position: absolute;
+    border-style: ;
+    height:400px;
+    width:400px;
+    top:1150px;
+    left:720px;
+    font-size:20px;
+    color: rgb(148, 108, 108);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+#ssr{
+    position: absolute; 
+    top:1560px;  
+    margin-left:20px;
+}
+#sdetails{
+    position: absolute; 
+    top :1520px;
+    left:700px;
+    font-family: "Shadows Into Light", cursive;
+    font-weight: bold;
+    font-style: normal; 
+    font-size:60px;
+    color: black;
+}
+#sdet{ 
+    
+    height:400px;
+    width:400px;
+    position:absolute ;
+    top:1610px;
+    left:720px;
+    font-size:20px;
+    color: rgb(148, 108, 108);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#vijay{ 
+    position: absolute;
+    top:2050px;
+    margin-left:20px;
+}
+#vsdetails{
+    position: absolute;
+    top:1990px;
+    left:700px;
+    font-family: "Shadows Into Light", cursive;
+    font-weight: bold;
+    font-style: normal; 
+    font-size:60px;
+    color: black;
+}
+#vsdet{
+    position: absolute;
+   
+    height:400px;
+    width:400px;
+    top:2100px;
+    left:720px;
+    font-size:20px;
+    color: rgb(148, 108, 108);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.foot {
+    background-color: var(--primary-color);
+    color: gray;
+    padding: 50px;
+}

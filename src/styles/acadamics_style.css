@@ -89,7 +89,7 @@ h1 {
 
 .departments, .courses, .faculty {
     padding: 1.5rem;
-    background-color: var(--secondary-color);
+    background-color: white;
 }
 
 h2 {

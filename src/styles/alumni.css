@@ -211,8 +211,8 @@ body::-webkit-scrollbar-track {
 }
 #details{
     position: absolute;
-    right :400px;
-    bottom:90px;
+    right :500px;
+    bottom:80px;
     font-family: "Shadows Into Light", cursive;
     font-weight: bold;
     font-style: normal; 
@@ -221,8 +221,8 @@ body::-webkit-scrollbar-track {
 } 
 #rdet{ 
     position: absolute;
-    top:660px;
-    right:300px;
+    top:680px;
+    right:400px;
     border-style:none ;
     height:300px;
     width:400px;
@@ -248,7 +248,7 @@ main{
 #vdetails{
     position: absolute;
     top:1050px;
-    right:350px;
+    right:390px;
     font-family: "Shadows Into Light", cursive;
     font-weight: bold;
     font-style: normal; 
@@ -257,7 +257,7 @@ main{
 }
 #vdet{
     position: absolute;
-    border-style: ;
+    /* border-style: ; */
     height:400px;
     width:400px;
     top:1150px;

@@ -221,27 +221,27 @@ body {
     overflow-y: scroll;
 }
 
-/* Main container */
+
 .content {
     height: 150vh;
     padding: 20px;
     font-family: Arial, sans-serif;
 }
 
-/* Scrollbar styles */
+
 ::-webkit-scrollbar {
     width: 10px;
-    /* Width of the scrollbar */
+    
 }
 
 ::-webkit-scrollbar-track {
     background: #f0f0f0;
-    /* Scrollbar track color */
+    
 }
 
 ::-webkit-scrollbar-thumb {
     background: #7bc1e1;
-    /* Scrollbar thumb color */
+    
     border-radius: 5px;
 }
 
